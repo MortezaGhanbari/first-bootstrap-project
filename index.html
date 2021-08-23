@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>First Bootstrap Project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
-  <body style="margin: 75px 5% 5% 5%;">
+  <body style="margin: 75px 2.5% 5% 2.5%;">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -38,54 +40,91 @@
       </div>
     </nav>
 
-    <div id="htmlSkillDescription" style="margin-bottom: 25px;">
-      <span style="display:inline-block;">HTML</span>
-      <div class="progress">
-        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-        aria-valuemin="0" aria-valuemax="100" style="width:50%">
-          <span>50%</span>
+    <main class="container-fluid">
+      <div id="frontEndSkills" class="row">
+        <div class="panel panel-default col-sm-6 col-md-4">
+          <div class="panel-body" id="htmlSkillDescription">
+            <h4>HTML</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                <span>50%</span>
+              </div>
+            </div>
+            <ul id="detailedHtmlSkills" class="collapse">
+              <li>HTML5 useful tags</li>
+              <li>XHTML</li>
+            </ul>
+            <span data-toggle="collapse" data-target="#detailedHtmlSkills" class="small details-toggle">
+              Show/Hide Details <span class="caret"></span>
+            </span>
+          </div>
+        </div>
+
+        <div class="panel panel-default col-sm-6 col-md-4">
+          <div class="panel-body" id="cssSkillDescription">
+            <h4>CSS</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35"
+              aria-valuemin="0" aria-valuemax="100" style="width:35%">
+                <span>35%</span>
+              </div>
+            </div>
+            <ul id="detailedCssSkills" class="collapse">
+              <li>CSS3</li>
+              <li>Bootstrap 3</li>
+              <li>Tailwind</li>
+            </ul>
+            <span data-toggle="collapse" data-target="#detailedCssSkills" class="small details-toggle">
+              Show/Hide Details <span class="caret"></span>
+            </span>
+          </div>
+        </div>
+        <div class="clearfix visible-sm"></div>
+
+        <div class="panel panel-default col-sm-6 col-md-4">
+          <div class="panel-body" id="javascriptSkillDescription">
+            <h4>JavaScript</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+              aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                <span>20%</span>
+              </div>
+            </div>
+            <ul id="detailedJavascriptSkills" class="collapse">
+              <li>ES5 & ES6</li>
+              <li>Google's coding standards for JS</li>
+            </ul>
+            <span data-toggle="collapse" data-target="#detailedJavascriptSkills" class="small details-toggle">
+              Show/Hide Details <span class="caret"></span>
+            </span>
+          </div>
+        </div>
+        <div class="clearfix visible-md visible-lg"></div>
+
+        <div class="panel panel-default col-sm-6 col-md-4">
+          <div class="panel-body" id="bootstrapSkillDescription">
+            <h4>Bootstrap</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+              aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                <span>20%</span>
+              </div>
+            </div>
+            <ul id="detailedBootstrapSkills" class="collapse">
+              <li>ES5 & ES6</li>
+              <li>Google's coding standards for JS</li>
+            </ul>
+            <span data-toggle="collapse" data-target="#detailedBootstrapSkills" class="small details-toggle">
+              Show/Hide Details <span class="caret"></span>
+            </span>
+          </div>
         </div>
       </div>
-      <ul id="detailedHtmlSkills" class="collapse">
-        <li>HTML5 useful tags</li>
-        <li>XHTML</li>
-      </ul>
-      <span data-toggle="collapse" data-target="#detailedHtmlSkills">Show/Hide Details <span class="caret"></span></span>
-    </div>
+    </main>
 
-    <div id="cssSkillDescription" style="margin-bottom: 25px;">
-      <span style="display:inline-block;">CSS</span>
-      <div class="progress">
-        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="35"
-        aria-valuemin="0" aria-valuemax="100" style="width:35%">
-          <span>35%</span>
-        </div>
-      </div>
-      <ul id="detailedCssSkills" class="collapse">
-        <li>CSS3</li>
-        <li>Bootstrap 3</li>
-        <li>Tailwind</li>
-      </ul>
-      <span data-toggle="collapse" data-target="#detailedCssSkills">Show/Hide Details <span class="caret"></span></span>
-    </div>
-
-    <div id="javascriptSkillDescription" style="margin-bottom: 25px;">
-      <span style="display:inline-block;">JavaScript</span>
-      <div class="progress">
-        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
-        aria-valuemin="0" aria-valuemax="100" style="width:20%">
-          <span>20%</span>
-        </div>
-      </div>
-      <ul id="detailedJavascriptSkills" class="collapse">
-        <li>ES5 & ES6</li>
-        <li>familiar with Google's coding standards for JavaScript</li>
-      </ul>
-      <span data-toggle="collapse" data-target="#detailedJavascriptSkills">Show/Hide Details <span class="caret"></span></span>
-    </div>
-
-
-    <pre>
+    
+    <pre class="col-sm-12">
       a
       a
       a
